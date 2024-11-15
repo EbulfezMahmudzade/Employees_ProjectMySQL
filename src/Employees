@@ -18,8 +18,7 @@ select avg(salary) as average_salary
 from salaries;
 
 -- soru 4 -'Erkek' cinsiyetindeki tüm çalışanların ortalama maaşını hesaplayın.
-SELECT AVG(salary) AS average_salary
-FROM salaries;
+
 select avg(salary) as OdemeOrtalamasi from employees 
 JOIN salaries s ON employees.emp_no = salaries.emp_no
   where employees.gender='M';
